@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/videoFondo.css">
+		<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estiloCarrusel.css">
+		<link rel="stylesheet" type="text/css" href="css/Chart.min.css">
+		<link rel="stylesheet" type="text/css" href="css/simple-calendar.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- 
+		 -->
+
+		<video autoplay muted loop>
+			<source src="img/video/fondo1.mp4" type="video/mp4">
+		</video>
+		<div class="owl-carousel owl-theme">
+			<div class="cuadro item"> 
+				<label>maria</label>
+				<section class="imagenCaja">
+					<img src="img/angela.png">
+				</section>
+			</div>
+			<div class="cuadro item"> 
+				<canvas id="myChart" width="200" height="200"></canvas>
+			</div>
+			<div class="cuadro item" id="item"> 
+
+			</div>
+			<div class="cuadro item"> ha </div>
+			<div class="cuadro item"> usted </div>
+			<div class="cuadro item"> de mi familia </div>
+			<div class="cuadro item"> me encargo </div>
+		</div>
+
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/owlcarousel/owl.carousel.min.js"></script>
+		<script type="text/javascript" src=""></script>
+		<script type="text/javascript" src=""></script>
+		<script type="text/javascript" src=""></script>
+		<script type="text/javascript" src=""></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.owl-carousel').owlCarousel({ 
+				    loop:true,
+				    margin:10,
+				    nav:true,
+				    autoplay:true,
+				    responsive:{
+				        0:{
+				            items:1
+				        },
+				        600:{
+				            items:3
+				        },
+				        1000:{
+				            items:5
+				        }
+				    }
+				})
+			});			
+		</script>
+	</body>
+</html>
